@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> Your Profile </title>
+        <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <!--  Font Awesome -->
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400, 900" rel="stylesheet">
+   <!-- Animate CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- CSS -->
+   <link rel = "stylesheet" href = "profileStylesheet.css">
+   <!-- JavaScript -->
+   <script src = "profile.js" defer>  </script>
+
+   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+   <script>
+   // Initialize Firebase
+   var config = {
+       apiKey: "AIzaSyAqKnlINiRpAjXTNZyUu38BrszHFupaGsI",
+       authDomain: "demoday-32930.firebaseapp.com",
+       databaseURL: "https://demoday-32930.firebaseio.com",
+       projectId: "demoday-32930",
+       storageBucket: "demoday-32930.appspot.com",
+       messagingSenderId: "126874328283"
+       };
+   firebase.initializeApp(config);
+   </script>
+
+    </head> 
+    <body>
+
+    <!-- <header> <img src = "assets/cooltext295639698786695.png"> </header> -->
+        <div class="container">
+                <header>
+                    <a href="main.html"><img id="logo" src="cooltext295639698786695.png"></a>
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </header>
+                <main>
+                  
+                  <div class="row">
+                    <div class="left col-lg-4">
+                      <div class="photo-left">
+                        <img class="photo" src="https://teenlife.s3.amazonaws.com/media/uploads/blogs/authors/EvanBerkowitzHeadshot.JPG"/>
+                        <div class="active"></div>
+                      </div>
+                      <h4 class="name">Blake Williams</h4>
+                      <p class="info">Interested in Algebra, US History and JavaScript</p>
+                      <p class="info">Bwilliams</p>
+                      <div class="stats row">
+                        <div class="stat col-xs-4" style="padding-right: 50px;">
+                          <p class="number-stat">6</p>
+                          <p class="desc-stat">Friends</p>
+                        </div>
+                        <div class="stat col-xs-4">
+                          <p class="number-stat">3</p>
+                          <p class="desc-stat">Following</p>
+                        </div>
+                        <div class="stat col-xs-4" style="padding-left: 50px;">
+                          <p class="number-stat">6</p>
+                          <p class="desc-stat">Posts</p>
+                        </div>
+                      </div>
+                      <p class="desc"> </p>
+                      <div class="social">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        <i class="fa fa-tumblr-square" aria-hidden="true"></i>
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div id="messages" class="right col-lg-8">
+                      <h3 id = "post"> POSTS </h3>
+
+                      
+                        </div>
+                      </div>
+                    </div>
+                </main>
+              </div>
+
+    </body>
+</html>

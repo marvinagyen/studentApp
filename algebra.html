@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Algebra</title>
+    <!-- BootStrap & JQuery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://www.desmos.com/api/v1.1/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <!-- End BootStrap & JQuery -->
+    <!-- Link to JavaScript & FireBase -->
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+    <script src="algebra.js" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyAqKnlINiRpAjXTNZyUu38BrszHFupaGsI",
+    authDomain: "demoday-32930.firebaseapp.com",
+    databaseURL: "https://demoday-32930.firebaseio.com",
+    projectId: "demoday-32930",
+    storageBucket: "demoday-32930.appspot.com",
+    messagingSenderId: "126874328283"
+    };
+firebase.initializeApp(config);
+</script>
+    <!-- End Link to JavaScript & FireBase -->
+  </head>
+  <body>
+    <div id="userdiv">
+        <a target="_blank" href="profile.html"> <p id="username">Blake W.</p></a>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">INTERESTS
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="algebra.html">Algebra 2</a></li>
+                <li><a href="ushistory.html">US History</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+        </div>
+    </div>
+    <h1 id="forumheader">ALGEBRA 2</h1>
+    <div id="pages">
+      <a href="https://www.khanacademy.org/math/algebra2/advanced-functions" target="_blank">Advanced equations ~</a>
+      <a href="https://www.khanacademy.org/math/algebra2/arithmetic-with-polynomials" target="_blank">Arithmetic with polynomials ~</a>
+      <a href="https://www.khanacademy.org/math/algebra2/introduction-to-complex-numbers-algebra-2" target="_blank">Complex Numbers ~</a>
+      <a href="https://www.khanacademy.org/math/algebra2/intro-to-conics-alg2" target="_blank">Conic Sections ~</a>
+      <a href="https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions" target="_blank">Exponential logarithms ~</a>
+      <a href="https://www.khanacademy.org/math/algebra2/manipulating-functions" target="_blank">Functions ~</a>
+      <a href="https://www.mathplanet.com/education/algebra-2/how-to-graph-functions-and-linear-equations" target="_blank">Lines ~</a>
+      <a href="https://www.khanacademy.org/math/algebra2/sequences-and-series" target="_blank">Series ~</a>
+      <a href="https://www.ixl.com/math/algebra-2/graph-sine-and-cosine-functions" target="_blank">Sine ~</a>
+      <a href="profile.html" id="addlink">add more</a>
+    </div>
+    <div id="calculator" style="width: 500px; height: 480px;"></div>
+    <script>
+            var elt = document.getElementById('calculator');
+            var calculator = Desmos.GraphingCalculator(elt);
+            calculator.setExpression({id:'graph1', latex:'y=x^3'});
+    </script>
+    <a href="main.html"><img id="logo" src="cooltext295639698786695.png"></a>
+    <div class= "CHAT"> </div>
+    <div class = "userContainer">
+        <form> 
+             <div class = "inputContainer"> 
+                
+                <div class = "singleInput"> 
+                    <label for = "username">Your name:</label>
+                    <input id = "user" type = "text">
+                </div>
+                
+                <div class = "singleInput">
+                    <label for ="message">Message: </label>
+                    <input id = "msg" type = "text">
+                </div>
+             </div>
+            <button id = "submit">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+#userdiv {
+    background: rgba(132, 132, 207, 0.726);
+    padding-top: 2.5px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 25px;
+    border-radius: 2.5px;
+    position: absolute;
+    display: flex;
+    top: 2.5%;
+    right: 0;
+    flex-direction: column;
+}
+
+.new{
+    position: absolute;
+    overflow-y: scroll;
+    top: 0px;
+    left: 50%;
+    width: 450px;
+    height: 100%;
+    padding: 5px;
+    border-left: dashed;
+    border-width: 2.5px;
+    background-color: rgba(128, 128, 128, 0.596);
+    text-align: center;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 30px;
+}
+
+.dropdown{
+    width: 80px;
+}
+
+#forumheader{
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    text-align: center;
+}
+
+#logo{
+    position: absolute;
+    opacity: .75;
+    width: 120px;
+    height: 70px;
+}
+
+@keyframes start{
+    30% {transform: rotate(10deg); font-size: 19px; left: 150px;}
+    50% {transform: rotate(-10deg);}
+    80% {font-size: 27px;}
+    99% {transform: rotate(0deg); font-size: 25px;}
+}
+
+#fullnamelogo{
+    animation-name: start;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    position: absolute;
+    top: 15px;
+    font-size: 25px;
+    left: 125px;
+    color: white;
+    text-shadow: 2px 2px rgba(132, 132, 207, 0.726);
+}
+
+#pages{
+    position: absolute;
+    top: 80px;
+    right: 500px;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+}
+
+
+#username {
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+
+}
+
+body{
+    background: rgba(173, 117, 13, 0.425);
+    overflow: hidden;
+}
+ 
+ #submit {
+    cursor: pointer;
+ }
+ 
+ #submit:hover {
+
+ }
+ 
+ #submit:focus {
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: gray;
+ }
+ 
+ .allMessages {
+    flex: 1;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-gap: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ .userContainer {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    position: absolute;
+    top: 27%;
+    left: 15px;
+ }
+ 
+ .CHAT {
+    position: absolute;
+    top: 50%;
+    background: rgba(160, 159, 159, 0.712);
+    width: 320px;
+    left: 15px;
+    height: 400px;
+    overflow-y: scroll;
+ }
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px
+ }
+ 
+#user {
+    background-image: url('http://www.clker.com/cliparts/g/c/W/l/H/m/people-icon-hi.png');
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+
+ 
+#msg {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/stroke/53/Mail-512.png');
+    background-size: 2em;
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+ }
+
+#calculator{
+    position: absolute;
+    border: solid;
+    margin: 2px;
+    right: 0px;
+    top: 41%;
+
+}
+
+#addlink{
+    text-decoration: underline overline;
+    color: rgb(19, 161, 19);
+}
+
+#youtubevideo{
+    position: absolute;
+    border: solid;
+    margin: 2px;
+    right: 0px;
+    top: 41%;
+}
+
+.neweventsdivide{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: black;
+    font-size: 15px;
+}
+
+.neweventslink{
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes pulse {
+    25% {color: rgb(0, 185, 185)}
+    50% {color: rgb(0, 224, 224) }
+}
+
+.newtopic{
+    font-size: 25px;
+}
+
+#forumheader{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.date{
+    color: rgb(94, 84, 84);
+    margin-top: -12px;
+}
+
+#mission{
+    width: 500px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    font-stretch: condensed;
+    top: 115px;
+    left: 7%;
+    background-color: rgba(47, 211, 83, 0.507);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+}
+

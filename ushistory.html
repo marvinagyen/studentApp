@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>US History</title>
+    <!-- BootStrap & JQuery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- End BootStrap & JQuery -->
+    <!-- Link to JavaScript & FireBase -->
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+    <script src="ushistory.js" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyAqKnlINiRpAjXTNZyUu38BrszHFupaGsI",
+    authDomain: "demoday-32930.firebaseapp.com",
+    databaseURL: "https://demoday-32930.firebaseio.com",
+    projectId: "demoday-32930",
+    storageBucket: "demoday-32930.appspot.com",
+    messagingSenderId: "126874328283"
+    };
+firebase.initializeApp(config);
+</script>
+    <!-- End Link to JavaScript & FireBase -->
+  </head>
+  <body>
+    <div id="userdiv">
+        <a target="_blank" href="profile.html"> <p id="username">Blake W.</p></a>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">INTERESTS
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                <li><a href="algebra.html">Algebra 2</a></li>
+                <li><a href="ushistory.html">US History</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+        </div>
+    </div>
+    <h1 id="forumheader">US HISTORY</h1>
+    <div id="pages">
+      <a href="https://www.mrdonn.org/nativeamericans.html" target="_blank">Native Americans ~</a>
+      <a href="https://www.history.com/topics/american-civil-war/american-civil-war-history" target="_blank">Civil War ~</a>
+      <a href="https://www.infoplease.com/history-and-government/us-history/us-history-timeline" target="_blank">Timeline ~</a>
+      <a href="https://www.infoplease.com/1600-1799" target="_blank">Colonial ~</a>
+      <a href="http://www.ushistory.org/us/35.asp" target="_blank">Reconstruction ~</a>
+      <a href="https://www.history.com/topics/us-presidents" target="_blank">Presidents ~</a>
+      <a href="https://courses.lumenlearning.com/boundless-politicalscience/chapter/the-history-of-economic-policy/" target="_blank">19th Century Economics ~</a>
+      <a href="https://www.history.com/topics/cold-war/cold-war-history" target="_blank">Cold War ~</a>
+      <a href="profile.html" id="addlink">add more</a>
+    </div>
+    <a href="main.html"><img id="logo" src="cooltext295639698786695.png"></a>
+    <div class= "CHAT"> </div>
+    <div class = "userContainer">
+        <form> 
+             <div class = "inputContainer"> 
+                
+                <div class = "singleInput"> 
+                    <label for = "username">Your name:</label>
+                    <input id = "user" type = "text">
+                </div>
+                
+                <div class = "singleInput">
+                    <label for ="message">Message: </label>
+                    <input id = "msg" type = "text">
+                </div>
+             </div>
+            <button id = "submit">Submit</button>
+        </form>
+    </div>
+    <iframe id="youtubevideo" width="500" height="480" src="https://www.youtube.com/embed/videoseries?list=PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </body>
+</html>
